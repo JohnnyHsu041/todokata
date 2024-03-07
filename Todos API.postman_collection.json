@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "e87d0e4f-cf85-4602-9c21-807d8c5036d4",
+		"name": "Todos API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23036186"
+	},
+	"item": [
+		{
+			"name": "取得所有待辦事項",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://todokata.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todokata",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆待辦事項",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"吃早餐\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todokata.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todokata",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有待辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todokata.onrender.com/todos",
+					"protocol": "https",
+					"host": [
+						"todokata",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆待辦事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todokata.onrender.com/todos/{todoId}",
+					"protocol": "https",
+					"host": [
+						"todokata",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"{todoId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更新單筆待辦事項",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"去上學\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todokata.onrender.com/todos/{todoId}",
+					"protocol": "https",
+					"host": [
+						"todokata",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"todos",
+						"{todoId}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
